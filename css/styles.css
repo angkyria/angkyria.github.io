@@ -1,0 +1,96 @@
+body {
+  padding:0px;
+  background:#f4f4f4;
+}
+ 
+a {
+  color: #0084ae;
+  text-decoration: none;
+}
+        
+a:hover, a:focus {
+  color: #00abe2; 
+  text-decoration:none;
+} 
+.sideway { 
+  margin: 0 auto;
+  letter-spacing: .1em; 
+  font-weight: 300;
+  font-family: 'Source Code Pro', latin-ext;
+  font-size:11px;
+
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg); 
+  position: absolute; 
+  left: -90px;
+  top: 330px;
+}
+
+.container {
+  margin: 0 auto;
+  padding:25px 0;
+}
+
+.sidebar {
+  padding-top:20px;
+  padding-right:20px;
+  color:black;
+}
+
+header h1 {
+  
+  font-family:'Source Code Pro', latin-ext;
+  font-weight:400;
+  font-size:40px;
+  color:black;
+  line-height:50px;
+  text-align:right;
+  margin-bottom:25px;
+}
+.about {
+  text-align:right;
+  color:#999999;
+}
+.about strong{
+  color:black;
+}
+.social {
+ font-size:25px;
+ text-align:center;
+}
+.social a {
+  color:black;
+  padding: 10px 14px;
+}
+         
+.social a:hover, .social a:focus {
+  color: #00abe2; 
+  text-decoration:none;
+} 
+.mynav {
+  font-family: 'Source Sans Pro', Franklin Gothic Book, Arial, sans-serif;
+  letter-spacing: .15em; 
+  text-transform: uppercase; 
+  font-size: 11px;
+  color: black;
+  list-style:none;
+  float:right; 
+}
+.content {
+  padding-top:95px;
+}
+footer {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  text-align: center; 
+  margin: 20px auto;
+  padding-top: 20px; 
+  font-size: 11px; 
+  color: #777; 
+  letter-spacing: .1em;
+  font-weight: 300; 
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px){
+	.sideway{display: none;}
+}
