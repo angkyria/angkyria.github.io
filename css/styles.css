@@ -6,61 +6,101 @@
 html,
 body {
   margin: 0;
-  padding:0;
-  background-color:#FFFFFF;
- font-family: Hack, monospace; 
+  padding: 0;
+  background-color: #f8f9fa;
+  font-family: Hack, monospace;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-.aboutme {
+.aboutme { 
+  display: block;
+  position: relative;
   margin: 0 auto;
-  padding-top:1.5rem;
+  padding-top: 1.5rem;
 }
 
-.aboutme img{
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    height:200px;
-    width:200px;
-    object-fit: cover;
-    transform: rotate(0deg);
+.aboutme img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  transform: rotate(0deg);
 }
 
-.aboutme h1{
-  text-align:center;
-  font-size: 1.8em; 
-  color:#0074D9;
-  
-}
-
-.aboutme p{
+.aboutme h1 {
   text-align: center;
-  color:#01FF70;
-  font-size:1em;
+  font-size: 1.8em;
+  color: #FC3C2D;
 }
 
-.aboutme ul{
-  list-style-type:none;
-  text-align:center;
-
+.aboutme p {
+  text-align: center;
+  color: #1B1D1C;
+  font-size: 1em;
 }
 
-.aboutme ul li{
-  display:inline;
+.aboutme p a:hover {
+  color: #7FDBFF;
 }
 
-
-.aboutme ul li a {
-   color: #FF851B;
-   text-decoration: none;
+.social-icons { 
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.aboutme ul li a:hover {
-   color: #FF4136 ;
-   text-decoration: none;
-}  
+.social-icons p {
+  color: #1B1D1C;
+}
 
-.aboutme ul li a i{
- font-size:1.5em;
+.social-icons ul {
+  list-style-type: none;
+}
+
+.social-icons ul li {
+  display: inline; 
+  color: #495057; 
+  font-size: 1.5em;  
+}
+
+.social-icons .nf-fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.social-icons .nf-fa-facebook_square:hover {
+  color: #1da1f2;
+}
+
+.social-icons .nf-oct-mark_github:hover {
+  color: #333;
+}
+
+.social-icons .nf-fa-linkedin:hover {
+  color: #0077b5;
+}
+
+.social-icons .nf-fa-instagram:hover {
+  background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.copyrights {  
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  font-size: 0.75em;
+  text-align: center; 
+}
+
+.copyrights .nf-fa-heart {
+  color: #FF4136;
 }
