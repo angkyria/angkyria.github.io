@@ -1,0 +1,315 @@
+
+:root {
+  --bg: #f8f9fa;
+  --fg: #1B1D1C;
+  --muted: #495057;
+  --faint: #6c757d;
+  --accent: #FC3C2D;
+  --rule: #dee2e6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  font-family: Hack, monospace;
+  color: var(--fg);
+}
+
+body {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 2rem;
+  font-size: 0.95em;
+  line-height: 1.65;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p a,
+li a {
+  border-bottom: 1px dotted var(--faint);
+}
+
+p a:hover,
+li a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- hero ---------- */
+
+.aboutme {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.aboutme img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0 0 1px var(--rule);
+}
+
+.aboutme h1 {
+  text-align: center;
+  font-size: 1.8em;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.aboutme p {
+  text-align: center;
+  color: var(--fg);
+  font-size: 1em;
+}
+
+.aboutme p a:hover {
+  color: var(--accent);
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 0.85em !important;
+  line-height: 1.8;
+}
+
+.tagline .nf {
+  color: var(--accent);
+  margin-right: 0.2rem;
+}
+
+/* ---------- sections ---------- */
+
+.section {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 1.75rem;
+}
+
+.section h2 {
+  font-size: 1em;
+  color: var(--accent);
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.9rem;
+}
+
+.section h2::before {
+  content: "// ";
+  color: var(--faint);
+}
+
+.section h3 {
+  font-size: 0.95em;
+  margin: 1.25rem 0 0.15rem;
+}
+
+.when {
+  color: var(--faint);
+  font-weight: normal;
+  font-size: 0.85em;
+}
+
+.section p {
+  color: var(--fg);
+  margin: 0.55rem 0;
+}
+
+.section ul {
+  padding-left: 1.1rem;
+  margin: 0.55rem 0;
+}
+
+.section li {
+  margin: 0.3rem 0;
+}
+
+.section .note {
+  color: var(--muted);
+  font-size: 0.85em;
+}
+
+.section .more {
+  font-size: 0.85em;
+  color: var(--muted);
+}
+
+/* key/value rows, used on the CV page */
+
+.kv,
+.section .kv {
+  list-style: none;
+  padding-left: 0.75rem;
+}
+
+.kv li {
+  margin: 0.5rem 0;
+}
+
+.kv .k {
+  display: block;
+  color: var(--accent);
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+}
+
+.kv .v {
+  color: var(--fg);
+}
+
+/* ---------- legacy repos block ---------- */
+
+.repos {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.repos h1 {
+  text-align: center;
+  font-size: 1.8em;
+  color: var(--accent);
+}
+
+.repos h3 {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.repos p {
+  text-align: center;
+  color: var(--fg);
+  font-size: 1em;
+}
+
+.repos p a:hover {
+  color: var(--accent);
+}
+
+/* ---------- nav ---------- */
+
+.backlink {
+  padding-top: 1.5rem;
+  font-size: 0.85em;
+  color: var(--muted);
+}
+
+.backlink a {
+  border-bottom: 1px dotted var(--faint);
+}
+
+.backlink a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- social ---------- */
+
+.social-icons {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.social-icons p {
+  color: var(--fg);
+}
+
+.social-icons ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.social-icons ul li {
+  display: inline;
+  color: var(--muted);
+  font-size: 1.5em;
+  margin: 0 0.3rem;
+}
+
+.social-icons ul li a {
+  border-bottom: none;
+}
+
+.social-icons .nf-fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.social-icons .nf-fa-facebook_square:hover {
+  color: #1da1f2;
+}
+
+.social-icons .nf-oct-mark_github:hover {
+  color: #333;
+}
+
+.social-icons .nf-fa-linkedin:hover {
+  color: #0077b5;
+}
+
+.social-icons .nf-fa-envelope:hover {
+  color: var(--accent);
+}
+
+.social-icons .nf-fa-instagram:hover {
+  background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+/* ---------- footer ---------- */
+
+.copyrights {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 1rem;
+  font-size: 0.75em;
+  text-align: center;
+  color: var(--muted);
+}
+
+.copyrights .nf-fa-heart {
+  color: #FF4136;
+}
+
+/* ---------- small screens ---------- */
+
+@media (max-width: 480px) {
+  body {
+    padding: 0 1rem 2rem;
+  }
+
+  .aboutme h1 {
+    font-size: 1.35em;
+  }
+
+  .aboutme img {
+    height: 150px;
+    width: 150px;
+  }
+}
