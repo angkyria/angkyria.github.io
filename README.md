@@ -1,8 +1,7 @@
 # angkyria.github.io
-My personal site a short introduction, what I race, and where to find me.
+My personal site a short introduction, what I race, and where to find me. Live at https://angkyria.github.io
 
-Plain static HTML, no build step and no JavaScript. Served by GitHub Pages
-from the `master` branch.
+About field: Personal site — angkyria.github.io. Static HTML, no build step.
 
 ```
 index.html      home
