@@ -3,9 +3,10 @@
   --bg: #f8f9fa;
   --fg: #1B1D1C;
   --muted: #495057;
-  --faint: #6c757d;
-  --accent: #FC3C2D;
+  --faint: ##5c636a;
+  --accent: ##D42D1F;
   --rule: #dee2e6;
+  --accent-lg: #FC3C2D;
 }
 
 * {
@@ -69,7 +70,7 @@ li a:hover {
 .aboutme h1 {
   text-align: center;
   font-size: 1.8em;
-  color: var(--accent);
+  color: var(--accent-lg);
   margin-bottom: 0.25rem;
 }
 
@@ -92,6 +93,11 @@ li a:hover {
 .tagline .nf {
   color: var(--accent);
   margin-right: 0.2rem;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 /* ---------- sections ---------- */
@@ -312,4 +318,14 @@ li a:hover {
     height: 150px;
     width: 150px;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171a;  --fg: #e6e8ea;
+    --muted: #aab1b8;  --faint: #8b939b;
+    --accent: #ff6a5c;  --accent-lg: #ff6a5c;
+    --rule: #2c3035;
+  }
+  .aboutme img { box-shadow: 0 0 0 1px var(--rule); }
 }
