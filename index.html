@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- identity -->
     <title>Angelos Kyriacou — Service Desk Team Leader & XCO Racer</title>
     <meta name="description" content="Angelos Kyriacou — IT service desk team leader in Nicosia, Cyprus. Microsoft 365, WatchGuard and HP support for banking and pharma clients. XCO racer.">
     <link rel="canonical" href="https://angkyria.github.io/">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <meta name="theme-color" content="#f8f9fa">
+    <meta name="theme-color" content="#f8f9fa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#15171a" media="(prefers-color-scheme: dark)">
 
     <!-- link previews -->
     <meta property="og:type" content="profile">
@@ -18,9 +20,6 @@
     <meta name="twitter:card" content="summary">
 
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/hack.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
 
     <script type="application/ld+json">
         {"@context":"https://schema.org","@type":"Person",
@@ -35,53 +34,72 @@
   </head>
   <body>
 
-      <div class="aboutme">
-          <img src="me.jpg" alt="Angelos Kyriacou">
+    <main>
+
+      <header class="aboutme">
+          <img src="me.jpg" alt="Angelos Kyriacou" width="200" height="200">
           <h1>Hello! My name is Angelos Kyriacou</h1>
           <p class="tagline">
-            <i class="nf nf-fa-briefcase"></i> Service Desk Team Leader at Lasercharge<br>
-            <i class="nf nf-fa-map_marker"></i> Nicosia, <a href="https://en.wikipedia.org/wiki/Cyprus">Cyprus</a><br>
-            <i class="nf nf-fa-bicycle"></i>  XCO racer
+            Service Desk Team Leader at Lasercharge<br>
+            Nicosia, <a href="https://en.wikipedia.org/wiki/Cyprus">Cyprus</a><br>
+            XCO racer
           </p>
           <p>I run a service desk by day and race cross-country mountain bikes on the roughest ground this island has. Both jobs are the same job: find the real problem, fix it properly, keep going.</p>
-      </div>
+      </header>
 
-      <div class="section">
-          <h2>work</h2>
+      <section class="section" aria-labelledby="work">
+          <h2 id="work">work</h2>
           <p><strong>Lasercharge LTD</strong> <span class="when">— Nicosia, since Jan 2020. Team leader since 2025.</span></p>
-          <p>I own the first-line queue for our enterprise client base across banking, pharmaceuticals, financial services and market research taking the calls, triaging and diagnosing at first contact, closing what can be closed remotely, and putting the rest in front of the right engineer. Alongside that I plan the daily workload for a team of 9–15 field and desk technicians, run the spare-parts warehouse and all procurement so no support commitment ever waits on availability, and handle HP warranty claims from diagnosis through to closure.</p>
-          <p>On the systems side I administer customer Microsoft 365 tenants identity, licensing, Exchange Online, security and access policies plus WatchGuard Firebox firewalls and Panda endpoint protection across the client base. When a fault is genuinely hard, it escalates to me.</p>
-          <p>Before all of that, sixteen years at <strong>E.X. Podilates</strong>, the family bicycle import and repair business the workshop bench first, then imports, distribution, international trade expos, and the Dolibarr ERP the whole operation ran on.</p>
+          <p>I own the first-line queue for our enterprise client base across banking, pharmaceuticals, financial services and market research — taking the calls, triaging and diagnosing at first contact, closing what can be closed remotely, and putting the rest in front of the right engineer. Alongside that I plan the daily workload for a team of 9–15 field and desk technicians, run the spare-parts warehouse and all procurement so no support commitment ever waits on availability, and handle HP warranty claims from diagnosis through to closure.</p>
+          <p>On the systems side I administer customer Microsoft 365 tenants — identity, licensing, Exchange Online, security and access policies — plus WatchGuard Firebox firewalls and Panda endpoint protection across the client base. When a fault is genuinely hard, it escalates to me.</p>
+          <p>Before all of that, sixteen years at <strong>E.X. Podilates</strong>, the family bicycle import and repair business — the workshop bench first, then imports, distribution, international trade expos, and the Dolibarr ERP the whole operation ran on.</p>
           <p class="more"><a href="cv.html">The full version is here</a> — experience, tools, certifications.</p>
-      </div>
+      </section>
 
-      <div class="section">
-          <h2>racing</h2>
-          <p>I race cross-country mountain bike for Cyprus — XCO, XCC and XCE with a second place at the 2026 national championships at Troodos.</p>
+      <section class="section" aria-labelledby="racing">
+          <h2 id="racing">racing</h2>
+          <p>I race cross-country mountain bike for Cyprus — XCO, XCC and XCE — with a second place at the 2026 national championships at Troodos, and I'm currently leading the 2026 Cyprus MTB Cup.</p>
           <p>I train on the island's roughest ground, off data rather than feel, around thirteen hours a week. Running fills the other half of the year, kept easy on purpose apart from one target race each winter.</p>
-          <p>Next up: the Ayia Marina Challenge in September, RunIdalion in November, and a winter rebuild aimed at UCI points and the long road to World Cup start.</p>
-      </div>
+          <p>Next up: RunIdalion in November, then a winter rebuild aimed at UCI points and the long road to World Cup start.</p>
 
-      <div class="section">
-          <h2>code</h2>
+          <h3>2027 races</h3>
+          <ul class="races">
+            <li><time datetime="2027-01-31">31 Jan</time><span>MTB Cup #1 XCO — Tochni <span class="when">UCI C2</span></span></li>
+            <li><time datetime="2027-02-03">03 Feb</time><span>MTB Cup #2 XCO — Pyrga <span class="when">UCI C1</span></span></li>
+            <li><time datetime="2027-02-06">06 Feb</time><span>MTB Cup #3 XCC — Pyrga <span class="when">UCI C3</span></span></li>
+            <li><time datetime="2027-02-07">07 Feb</time><span>MTB Cup #4 XCO — Pyrga <span class="when">UCI C2</span></span></li>
+            <li><time datetime="2027-05-15">15 May</time><span>MTB Cup #5 XCO — Fterikoudi</span></li>
+            <li><time datetime="2027-07-17">17 Jul</time><span>National Championships XCC — Troodos</span></li>
+            <li><time datetime="2027-07-18">18 Jul</time><span>National Championships XCO — Troodos</span></li>
+            <li><time datetime="2027-10-24">24 Oct</time><span>MTB Cup #6 — Aronas</span></li>
+          </ul>
+          <p class="note">Provisional dates, from the Cyprus Cycling Federation's draft 2027 calendar.</p>
+      </section>
+
+      <section class="section" aria-labelledby="code">
+          <h2 id="code">code</h2>
           <p>
 My macOS dotfiles, a site for Kalograia — the village my family is from, on the wrong side of the line since 1974 — and the operating systems coursework I still keep around. <a href="my_repos.html">Here</a> you will find more information about my repos.</p>
-      </div>
+      </section>
 
-      <div class="social-icons">
+    </main>
+
+    <footer>
+      <nav class="social-icons" aria-label="Contact">
           <p>Feel free to reach out to me at these places.</p>
           <ul>
-              <li><a href="mailto:angkyria@icloud.com" aria-label="Email"><i class="nf nf-fa-envelope"></i></a></li>
-              <li><a href="https://github.com/angkyria" target="_blank" rel="noopener" aria-label="GitHub"><i class="nf nf-oct-mark_github"></i></a></li>
-              <li><a href="https://twitter.com/angkyria" target="_blank" rel="noopener" aria-label="Twitter"><i class="nf nf-fa-twitter"></i></a></li>
-              <li><a href="https://linkedin.com/in/angkyria" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="nf nf-fa-linkedin"></i></a></li>
-              <li><a href="https://instagram.com/angkyria" target="_blank" rel="noopener" aria-label="Instagram"><i class="nf nf-fa-instagram"></i></a></li>
+              <li><a href="mailto:angkyria@icloud.com">email</a></li>
+              <li><a href="https://github.com/angkyria" target="_blank" rel="noopener">github</a></li>
+              <li><a href="https://linkedin.com/in/angkyria" target="_blank" rel="noopener">linkedin</a></li>
+              <li><a href="https://instagram.com/angkyria" target="_blank" rel="noopener">instagram</a></li>
+              <li><a href="https://x.com/angkyria" target="_blank" rel="noopener">x</a></li>
           </ul>
-      </div>
+      </nav>
 
       <div class="copyrights">
-          <p><i class="nf nf-fa-code"></i> with <i class="nf nf-fa-heart"></i> by Angelos Kyriacou.</p>
+          <p>&lt;/&gt; with <span class="heart">&hearts;</span> by Angelos Kyriacou.</p>
       </div>
+    </footer>
 
   </body>
 </html>
