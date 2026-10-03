@@ -14,6 +14,7 @@ fonts/                   Hack webfont, latin subset (woff2 + woff)
 me.jpg                   portrait
 og.jpg                   1200×630 link-preview card
 favicon.svg              icon
+apple-touch-icon.png     180×180 icon for iOS home screens
 robots.txt               crawler rules + sitemap pointer
 sitemap.xml              the pages, plus the Karoo extension sites
 ```
