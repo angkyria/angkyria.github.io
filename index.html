@@ -16,8 +16,11 @@
     <meta property="og:url" content="https://angkyria.github.io/">
     <meta property="og:title" content="Angelos Kyriacou — Service Desk Team Leader &amp; XCO Racer">
     <meta property="og:description" content="IT service desk team leader in Nicosia, Cyprus. Microsoft 365, WatchGuard and HP. Cross-country mountain bike racer for Cyprus.">
-    <meta property="og:image" content="https://angkyria.github.io/me.jpg">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://angkyria.github.io/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Angelos Kyriacou — service desk team leader, cross-country mountain bike racer and Karoo extension developer">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="stylesheet" href="css/styles.css">
 
@@ -34,31 +37,53 @@
   </head>
   <body>
 
+    <nav class="sitenav" aria-label="Site">
+      <span class="path">~/angkyria</span>
+      <ul>
+        <li><a href="#work">work</a></li>
+        <li><a href="#racing">racing</a></li>
+        <li><a href="#code">code</a></li>
+        <li><a href="cv.html">cv</a></li>
+      </ul>
+    </nav>
+
     <main>
 
       <header class="aboutme">
           <img src="me.jpg" alt="Angelos Kyriacou" width="200" height="200">
-          <h1>Hello! My name is Angelos Kyriacou</h1>
+          <h1>Angelos Kyriacou</h1>
           <p class="tagline">
             Service Desk Team Leader at Lasercharge<br>
             Nicosia, <a href="https://en.wikipedia.org/wiki/Cyprus">Cyprus</a><br>
-            XCO racer
+            Cross-country (XCO) mountain bike racer
           </p>
           <p>I run a service desk by day and race cross-country mountain bikes on the roughest ground this island has. Both jobs are the same job: find the real problem, fix it properly, keep going.</p>
+          <dl class="fields">
+            <div><dt>nationals 2026</dt><dd>2nd</dd></div>
+            <div><dt>training a week</dt><dd>13 h</dd></div>
+            <div><dt>karoo extensions</dt><dd>3</dd></div>
+            <div><dt>technicians led</dt><dd>9–15</dd></div>
+          </dl>
       </header>
 
       <section class="section" aria-labelledby="work">
           <h2 id="work">work</h2>
           <p><strong>Lasercharge LTD</strong> <span class="when">— Nicosia, since Jan 2020. Team leader since 2025.</span></p>
-          <p>I own the first-line queue for our enterprise client base across banking, pharmaceuticals, financial services and market research — taking the calls, triaging and diagnosing at first contact, closing what can be closed remotely, and putting the rest in front of the right engineer. Alongside that I plan the daily workload for a team of 9–15 field and desk technicians, run the spare-parts warehouse and all procurement so no support commitment ever waits on availability, and handle HP warranty claims from diagnosis through to closure.</p>
-          <p>On the systems side I administer customer Microsoft 365 tenants — identity, licensing, Exchange Online, security and access policies — plus WatchGuard Firebox firewalls and Panda endpoint protection across the client base. When a fault is genuinely hard, it escalates to me.</p>
-          <p>Before all of that, sixteen years at <strong>E.X. Podilates</strong>, the family bicycle import and repair business — the workshop bench first, then imports, distribution, international trade expos, and the Dolibarr ERP the whole operation ran on.</p>
+          <p>I run the first-line queue for enterprise clients in banking, pharmaceuticals, financial services and market research, and plan the daily work for a team of 9–15 field and desk technicians. I also run the spare-parts warehouse and procurement, handle HP warranty claims, and administer the clients' Microsoft 365 tenants, WatchGuard firewalls and Panda endpoint protection. When a fault is genuinely hard, it escalates to me.</p>
+          <p>Before Lasercharge, and alongside it until 2025: sixteen years at <strong>E.X. Podilates</strong>, the family bicycle import and repair business — the workshop bench first, then imports, distribution, international trade expos, and the Dolibarr ERP the whole operation ran on.</p>
           <p class="more"><a href="cv.html">The full version is here</a> — experience, tools, certifications.</p>
       </section>
 
       <section class="section" aria-labelledby="racing">
           <h2 id="racing">racing</h2>
-          <p>I race cross-country mountain bike for Cyprus — XCO, XCC and XCE — with a second place at the 2026 national championships at Troodos, and I'm currently leading the 2026 Cyprus MTB Cup.</p>
+          <p>I race cross-country mountain bike for Cyprus — XCO, XCC and XCE.</p>
+
+          <h3>2026 results</h3>
+          <ul class="races">
+            <li><span class="pos">2nd</span><span>National Championships — Troodos</span></li>
+            <li><span class="pos">1st</span><span>Cyprus MTB Cup <span class="when">overall standings, as of October 2026</span></span></li>
+          </ul>
+
           <p>I train on the island's roughest ground, off data rather than feel, around thirteen hours a week. Running fills the other half of the year, kept easy on purpose apart from one target race each winter.</p>
           <p>Next up: RunIdalion in November, then a winter rebuild aimed at UCI points and the long road to World Cup start.</p>
 
@@ -73,7 +98,7 @@
             <li><time datetime="2027-07-18">18 Jul</time><span>National Championships XCO — Troodos</span></li>
             <li><time datetime="2027-10-24">24 Oct</time><span>MTB Cup #6 — Aronas</span></li>
           </ul>
-          <p class="note">Provisional dates, from the Cyprus Cycling Federation's draft 2027 calendar.</p>
+          <p class="note">Updated <time datetime="2026-10">October 2026</time>. 2027 dates are provisional, from the Cyprus Cycling Federation's draft calendar.</p>
       </section>
 
       <section class="section" aria-labelledby="code">
@@ -85,7 +110,7 @@
             <li><a href="https://angkyria.github.io/karoo-core/">CORE Heat</a> <span class="when">— needs a CORE sensor</span><br>Heat training fields: core and skin temperature, Heat Strain Index, heat zone, training load and adaptation.</li>
           </ul>
           <p>Older: my macOS dotfiles, a site for Kalograia — the village my family is from, on the wrong side of the line since 1974 — and the operating systems coursework I still keep around. <a href="my_repos.html">More on all of them here</a>.</p>
-             </section>
+      </section>
 
     </main>
 

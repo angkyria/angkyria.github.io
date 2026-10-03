@@ -117,7 +117,7 @@ a:focus-visible {
 
 .aboutme h1 {
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2.1em;
   color: var(--accent-lg);
   margin-bottom: 0.25rem;
 }
@@ -136,6 +136,40 @@ a:focus-visible {
   color: var(--muted);
   font-size: 0.85em !important;
   line-height: 1.8;
+}
+
+/* hero numbers, laid out like a page of bike computer data fields */
+
+.fields {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin: 1.5rem 0 0;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.fields div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--bg);
+  padding: 0.45rem 0.75rem 0.55rem;
+}
+
+.fields dt {
+  color: var(--faint);
+  font-size: 0.75em;
+}
+
+.fields dd {
+  margin: 0;
+  font-size: 1.7em;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 /* ---------- sections ---------- */
@@ -197,7 +231,7 @@ a:focus-visible {
   color: var(--muted);
 }
 
-/* date + race rows, used in the racing section */
+/* date or result + race rows, used in the racing section */
 
 .section .races {
   list-style: none;
@@ -212,6 +246,11 @@ a:focus-visible {
 
 .races time {
   color: var(--faint);
+}
+
+.races .pos {
+  color: var(--accent);
+  font-weight: bold;
 }
 
 /* key/value rows, used on the CV page */
@@ -239,17 +278,31 @@ a:focus-visible {
 
 /* ---------- nav ---------- */
 
-.backlink {
-  padding-top: 1.5rem;
+.sitenav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  padding-top: 1.25rem;
   font-size: 0.85em;
   color: var(--muted);
 }
 
-.backlink a {
+.sitenav ul {
+  display: flex;
+  gap: 1.1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sitenav .path a {
   border-bottom: 1px dotted var(--faint);
 }
 
-.backlink a:hover {
+.sitenav a:hover,
+.sitenav a[aria-current="page"] {
   color: var(--accent);
   border-bottom-color: var(--accent);
 }
@@ -305,13 +358,19 @@ a:focus-visible {
 
 /* ---------- small screens ---------- */
 
+@media (max-width: 640px) {
+  .fields {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 480px) {
   body {
     padding: 0 1rem 2rem;
   }
 
   .aboutme h1 {
-    font-size: 1.35em;
+    font-size: 1.6em;
   }
 
   .aboutme img {
@@ -326,5 +385,91 @@ a:focus-visible {
     --muted: #aab1b8;  --faint: #8b939b;
     --accent: #ff6a5c;  --accent-lg: #ff6a5c;
     --rule: #2c3035;
+  }
+
+  /* the portrait has a white background; take the glare off it */
+  .aboutme img {
+    filter: brightness(0.85);
+  }
+}
+
+/* ---------- print (angelos-kyriacou-cv.pdf is cv.html printed with these) ---------- */
+
+@media print {
+  :root {
+    --bg: #fff;  --fg: #000;
+    --muted: #333;  --faint: #555;
+    --accent: #c0281b;  --accent-lg: #c0281b;
+    --rule: #ccc;
+  }
+
+  @page {
+    margin: 12mm 15mm;
+  }
+
+  body {
+    max-width: none;
+    padding: 0;
+    font-size: 8.5pt;
+    line-height: 1.4;
+  }
+
+  .sitenav,
+  .social-icons,
+  .copyrights,
+  .no-print {
+    display: none;
+  }
+
+  .aboutme {
+    padding-top: 0;
+  }
+
+  .aboutme h1 {
+    margin-top: 0;
+    font-size: 1.6em;
+  }
+
+  .aboutme img {
+    filter: none;
+  }
+
+  .section {
+    padding-top: 0.6rem;
+  }
+
+  .section h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .section h3 {
+    margin: 0.8rem 0 0.1rem;
+  }
+
+  .section p {
+    margin: 0.35rem 0;
+  }
+
+  .section li {
+    margin: 0.15rem 0;
+  }
+
+  .kv li {
+    margin: 0.25rem 0;
+  }
+
+  p a,
+  li a {
+    border-bottom: none;
+  }
+
+  .section h2,
+  .section h3,
+  .section .note {
+    break-after: avoid;
+  }
+
+  .section li {
+    break-inside: avoid;
   }
 }
