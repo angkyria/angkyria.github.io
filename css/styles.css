@@ -50,6 +50,10 @@
   --rule: #dee2e6;
   --accent-lg: #FC3C2D;
   --heart: #FF4136;
+  /* chart series, checked for colour-blind separation against --bg */
+  --viz-ride: #D42D1F;
+  --viz-run: #2a78d6;
+  --viz-other: #1baf7a;
 }
 
 * {
@@ -259,6 +263,155 @@ a:focus-visible {
   font-weight: bold;
 }
 
+/* karoo extension cards, used in the code section */
+
+.section .cards {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cards .card {
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+  gap: 0 1rem;
+  margin: 1.1rem 0;
+}
+
+.cards .shot {
+  display: block;
+  aspect-ratio: 1200 / 630;
+  border-bottom: none;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #000;
+}
+
+.cards .shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* a whole Karoo screen, shown at its own proportions on black */
+.cards .shot.device img {
+  object-fit: contain;
+}
+
+.cards .card h3 {
+  margin: 0 0 0.2rem;
+}
+
+.cards .card p {
+  margin: 0.25rem 0;
+}
+
+/* training chart, used in the racing section */
+
+.viz {
+  margin: 1.25rem 0 0.5rem;
+}
+
+.viz figcaption strong {
+  display: block;
+  font-size: 0.95em;
+}
+
+.viz figcaption .note {
+  color: var(--muted);
+  font-size: 0.85em;
+}
+
+.viz-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1.1rem;
+  list-style: none;
+  margin: 0.5rem 0 0.25rem;
+  padding: 0;
+  font-size: 0.8em;
+  color: var(--muted);
+}
+
+.section .viz-legend li {
+  margin: 0;
+}
+
+.viz-legend .swatch {
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  margin-right: 0.4em;
+  border-radius: 2px;
+}
+
+.viz-plot {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.viz-ride { fill: var(--viz-ride); background: var(--viz-ride); }
+.viz-run { fill: var(--viz-run); background: var(--viz-run); }
+.viz-other { fill: var(--viz-other); background: var(--viz-other); }
+
+.viz-grid { stroke: var(--rule); stroke-width: 1; }
+.viz-axis { stroke: var(--faint); stroke-width: 1; }
+.viz-hit { fill: transparent; }
+.viz g:hover .viz-hit { fill: var(--rule); fill-opacity: 0.5; }
+
+.viz-tick,
+.viz-note {
+  font-family: Hack, monospace;
+  font-size: 11px;
+  fill: var(--faint);
+}
+
+.viz-note {
+  fill: var(--muted);
+}
+
+.viz details {
+  margin-top: 0.5rem;
+  font-size: 0.8em;
+  color: var(--muted);
+}
+
+.viz summary {
+  cursor: pointer;
+}
+
+.viz table {
+  margin-top: 0.5rem;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+.viz th,
+.viz td {
+  padding: 0.1rem 0.9rem 0.1rem 0;
+  text-align: right;
+}
+
+.viz th:first-child,
+.viz td:first-child {
+  text-align: left;
+}
+
+.viz th {
+  font-weight: normal;
+  color: var(--faint);
+  border-bottom: 1px solid var(--rule);
+}
+
+/* placeholder rows on the uses page */
+
+.kv .v.soon {
+  color: var(--faint);
+}
+
 /* key/value rows, used on the CV page */
 
 .kv,
@@ -368,6 +521,20 @@ a:focus-visible {
   .fields {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .cards .card {
+    grid-template-columns: 1fr;
+  }
+
+  .cards .shot {
+    margin-bottom: 0.5rem;
+  }
+
+  /* the chart scales down with the screen; keep its labels readable */
+  .viz-tick,
+  .viz-note {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -391,6 +558,7 @@ a:focus-visible {
     --muted: #aab1b8;  --faint: #8b939b;
     --accent: #ff6a5c;  --accent-lg: #ff6a5c;
     --rule: #2c3035;
+    --viz-ride: #e66767;  --viz-run: #3987e5;  --viz-other: #199e70;
   }
 
   /* the portrait has a white background; take the glare off it */
