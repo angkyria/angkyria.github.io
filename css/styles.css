@@ -60,6 +60,12 @@
   box-sizing: border-box;
 }
 
+/* no picture is ever wider than the column, whatever size it was saved at */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;

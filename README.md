@@ -20,6 +20,8 @@ robots.txt               crawler rules + sitemap pointer
 sitemap.xml              the pages, plus the Karoo extension sites
 ```
 
+Every page loads the stylesheet as `css/styles.css?v=4`. When you change `css/styles.css`, raise that number in all five pages (index, cv, my_repos, uses, 404) in the same push; otherwise browsers that cached the old stylesheet show the new pages with old styles for up to 10 minutes.
+
 After editing cv.html, regenerate the PDF: open cv.html in Chrome, Print → Save as PDF, A4, margins Default, and save over `angelos-kyriacou-cv.pdf`. The print styles in `css/styles.css` handle the layout.
 
 The racing section and the hero's data fields carry dated facts (2026 results, cup standings). Check them when the season changes, along with the "Updated" note under the race calendar. `og.jpg` repeats the hero's data fields, so it needs remaking when they change.
