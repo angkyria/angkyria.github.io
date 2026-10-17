@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uses — Angelos Kyriacou</title>
-    <meta name="description" content="The bike, sensors, tools, equipment and software Angelos Kyriacou races, trains and builds Hammerhead Karoo extensions with.">
+    <meta name="description" content="The bikes, sensors, tools, equipment and software Angelos Kyriacou races, trains and builds Hammerhead Karoo extensions with.">
     <link rel="canonical" href="https://angkyria.github.io/uses.html">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -14,16 +14,59 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://angkyria.github.io/uses.html">
     <meta property="og:title" content="Uses — Angelos Kyriacou">
-    <meta property="og:description" content="The bike, sensors, tools, equipment and software I race, train and build with.">
+    <meta property="og:description" content="The bikes, sensors, tools, equipment and software I race, train and build with.">
     <meta property="og:image" content="https://angkyria.github.io/og.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Angelos Kyriacou — service desk team leader, cross-country mountain bike racer and Karoo extension developer">
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="stylesheet" href="css/styles.css?v=4">
+    <link rel="stylesheet" href="css/styles.css?v=5">
   </head>
   <body>
+    <!-- the row icons: one <symbol> each, an outline on a 24x24 grid; .ico in css/styles.css sets the stroke and colour -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol id="i-frame" viewBox="0 0 24 24"><circle cx="5.5" cy="16" r="4"/><circle cx="18.5" cy="16" r="4"/><path d="M5.5 16H12L9.5 9.5ZM9.5 9.5H15.8M12 16L15.8 9.5M18.5 16L15.2 7.5M9.5 9.5L9 7.5M7.5 7.5H10.5M15.2 7.5L14.6 6H16.6"/></symbol>
+      <symbol id="i-fork" viewBox="0 0 24 24"><path d="M12 2.5V6"/><rect x="6.5" y="6" width="11" height="3" rx="1.5"/><path d="M8.5 9V13M15.5 9V13"/><rect x="7" y="13" width="3" height="8" rx="1.5"/><rect x="14" y="13" width="3" height="8" rx="1.5"/></symbol>
+      <symbol id="i-shock" viewBox="0 0 24 24"><circle cx="12" cy="3.5" r="1.5"/><rect x="8.5" y="5.5" width="7" height="9" rx="2"/><path d="M8.5 8.5H15.5M12 14.5V18.5"/><circle cx="12" cy="20.5" r="1.5"/></symbol>
+      <symbol id="i-drivetrain" viewBox="0 0 24 24"><path d="M10.61 4.94 L10.87 2.57 L13.13 2.57 L13.39 4.94 L15.02 5.47 L16.63 3.70 L18.46 5.03 L17.28 7.10 L18.29 8.49 L20.62 8.01 L21.32 10.16 L19.15 11.14 L19.15 12.86 L21.32 13.84 L20.62 15.99 L18.29 15.51 L17.28 16.90 L18.46 18.97 L16.63 20.30 L15.02 18.53 L13.39 19.06 L13.13 21.43 L10.87 21.43 L10.61 19.06 L8.98 18.53 L7.37 20.30 L5.54 18.97 L6.72 16.90 L5.71 15.51 L3.38 15.99 L2.68 13.84 L4.85 12.86 L4.85 11.14 L2.68 10.16 L3.38 8.01 L5.71 8.49 L6.72 7.10 L5.54 5.03 L7.37 3.70 L8.98 5.47 Z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-crank" viewBox="0 0 24 24"><path d="M8.65 3.26 L8.83 2.03 L10.17 2.03 L10.35 3.26 L11.45 3.51 L12.14 2.48 L13.35 3.06 L12.97 4.24 L13.85 4.95 L14.92 4.32 L15.76 5.37 L14.91 6.27 L15.40 7.29 L16.63 7.18 L16.93 8.49 L15.77 8.94 L15.77 10.06 L16.93 10.51 L16.63 11.82 L15.40 11.71 L14.91 12.73 L15.76 13.63 L14.92 14.68 L13.85 14.05 L12.97 14.76 L13.35 15.94 L12.14 16.52 L11.45 15.49 L10.35 15.74 L10.17 16.97 L8.83 16.97 L8.65 15.74 L7.55 15.49 L6.86 16.52 L5.65 15.94 L6.03 14.76 L5.15 14.05 L4.08 14.68 L3.24 13.63 L4.09 12.73 L3.60 11.71 L2.37 11.82 L2.07 10.51 L3.23 10.06 L3.23 8.94 L2.07 8.49 L2.37 7.18 L3.60 7.29 L4.09 6.27 L3.24 5.37 L4.08 4.32 L5.15 4.95 L6.03 4.24 L5.65 3.06 L6.86 2.48 L7.55 3.51 Z"/><rect x="5.5" y="13" width="16" height="3" rx="1.5" transform="rotate(45 13.5 14.5)"/></symbol>
+      <symbol id="i-shifters" viewBox="0 0 24 24"><path d="M2.5 7H21.5M12 7V9.5"/><rect x="7" y="9.5" width="10" height="11" rx="3"/><path d="M10 14L12 12L14 14M10 16L12 18L14 16"/></symbol>
+      <symbol id="i-bottom-bracket" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><circle cx="12.00" cy="5.75" r="1.1"/><circle cx="16.42" cy="7.58" r="1.1"/><circle cx="18.25" cy="12.00" r="1.1"/><circle cx="16.42" cy="16.42" r="1.1"/><circle cx="12.00" cy="18.25" r="1.1"/><circle cx="7.58" cy="16.42" r="1.1"/><circle cx="5.75" cy="12.00" r="1.1"/><circle cx="7.58" cy="7.58" r="1.1"/></symbol>
+      <symbol id="i-brakes" viewBox="0 0 24 24"><path d="M2.5 7H21.5"/><rect x="5" y="4.5" width="7" height="5" rx="1.5"/><path d="M11.5 9.5C15.5 10.5 18.5 14 20 19.5"/></symbol>
+      <symbol id="i-rotors" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="6.75"/><circle cx="12" cy="12" r="2.25"/><path d="M12.00 9.75 L12.00 5.25 M14.14 11.30 L18.42 9.91 M13.32 13.82 L15.97 17.46 M10.68 13.82 L8.03 17.46 M9.86 11.30 L5.58 9.91"/></symbol>
+      <symbol id="i-hubs" viewBox="0 0 24 24"><path d="M2 12H6M18 12H22"/><rect x="6" y="5" width="2.5" height="14" rx="1.25"/><rect x="15.5" y="5" width="2.5" height="14" rx="1.25"/><path d="M8.5 10H15.5M8.5 14H15.5"/></symbol>
+      <symbol id="i-rims" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="6.5"/></symbol>
+      <symbol id="i-spokes" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="1.5"/><path d="M12.00 10.50 L12.00 3.00 M13.06 10.94 L18.36 5.64 M13.50 12.00 L21.00 12.00 M13.06 13.06 L18.36 18.36 M12.00 13.50 L12.00 21.00 M10.94 13.06 L5.64 18.36 M10.50 12.00 L3.00 12.00 M10.94 10.94 L5.64 5.64"/></symbol>
+      <symbol id="i-tyres" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="5"/><path d="M9.5 7.5L12 9L14.5 7.5M9.5 11.25L12 12.75L14.5 11.25M9.5 15L12 16.5L14.5 15"/></symbol>
+      <symbol id="i-inserts" viewBox="0 0 24 24"><path d="M12 3L19 6V11C19 15.5 16 18.5 12 21C8 18.5 5 15.5 5 11V6Z"/><path d="M9 12L11 14L15 10"/></symbol>
+      <symbol id="i-cockpit" viewBox="0 0 24 24"><path d="M2.5 9.5C7 8.25 17 8.25 21.5 9.5"/><path d="M10 9L10.5 15.5H13.5L14 9"/><circle cx="12" cy="18" r="2.5"/></symbol>
+      <symbol id="i-grips" viewBox="0 0 24 24"><rect x="4" y="8.5" width="15" height="7" rx="3.5"/><path d="M8 9V15M11.5 9V15M15 9V15M19 12H22.5"/></symbol>
+      <symbol id="i-seatpost" viewBox="0 0 24 24"><path d="M6 5H14"/><rect x="7.5" y="7" width="5" height="14" rx="1.5"/><path d="M10 5V7"/><path d="M18.5 6V14M16.5 8L18.5 6L20.5 8M16.5 12L18.5 14L20.5 12"/></symbol>
+      <symbol id="i-saddle" viewBox="0 0 24 24"><path d="M3 8.5C3 7 4.5 6.5 6.5 7L20.5 10.5C21.75 10.8 21.75 12.5 20.5 12.5H7C4.5 12.5 3 11 3 8.5Z"/><path d="M7.5 12.5L9 16H15.5L17 12.5"/></symbol>
+      <symbol id="i-pedals" viewBox="0 0 24 24"><path d="M2.5 12H8"/><circle cx="14" cy="12" r="2.5"/><path d="M9 6.5L12.25 10.25M15.75 13.75L19 17.5M19 6.5L15.75 10.25M12.25 13.75L9 17.5"/></symbol>
+      <symbol id="i-weight" viewBox="0 0 24 24"><circle cx="12" cy="6" r="2.5"/><path d="M6.5 9.5H17.5L20.5 20.5H3.5Z"/></symbol>
+      <symbol id="i-power" viewBox="0 0 24 24"><path d="M13 2.5L5 13.5H11.5L10.5 21.5L19 10.5H12.5Z"/></symbol>
+      <symbol id="i-heart-rate" viewBox="0 0 24 24"><path d="M12 20C5 15 3 11.5 3 8.5C3 6 5 4 7.5 4C9.5 4 11 5 12 6.5C13 5 14.5 4 16.5 4C19 4 21 6 21 8.5C21 11.5 19 15 12 20Z"/><path d="M6.5 11.5H9.5L11 9L13 14L14.5 11.5H17.5"/></symbol>
+      <symbol id="i-core-temperature" viewBox="0 0 24 24"><path d="M10 13.8V5A2 2 0 0 1 14 5V13.8A4 4 0 1 1 10 13.8Z"/><path d="M12 9.5V17"/></symbol>
+      <symbol id="i-recovery" viewBox="0 0 24 24"><rect x="2" y="9.5" width="20" height="5" rx="2.5"/><rect x="8" y="7" width="8" height="10" rx="2"/></symbol>
+      <symbol id="i-watch" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5.5"/><path d="M9 6.8L9.5 2.5H14.5L15 6.8M9 17.2L9.5 21.5H14.5L15 17.2"/><path d="M12 9.5V12L13.75 13.25"/></symbol>
+      <symbol id="i-pump" viewBox="0 0 24 24"><path d="M7 3H17M12 3V7"/><rect x="10" y="7" width="4" height="11" rx="1"/><path d="M12 18V21M7 21H17"/><path d="M14 9.5C19 9.5 19.5 15 17 17"/></symbol>
+      <symbol id="i-tubeless-repair" viewBox="0 0 24 24"><g transform="rotate(-45 12 12)"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><rect x="9" y="8.5" width="6" height="7"/></g></symbol>
+      <symbol id="i-tyre-lever" viewBox="0 0 24 24"><path d="M5 20.5L15.5 10C17 8.5 17 6.5 16 5L18.5 4C20.5 6.5 20 10 18 12L7.5 22.5C6.5 22.5 5 21.5 5 20.5Z"/></symbol>
+      <symbol id="i-head-unit" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><rect x="8.5" y="5" width="7" height="10" rx="0.5"/><path d="M9.5 12.5L11 10.5L12.5 12L14.5 8.5M10 18H14"/></symbol>
+      <symbol id="i-mount" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="7.5" rx="1.5"/><path d="M12 10V12.5"/><circle cx="12" cy="16.5" r="4"/><circle cx="12" cy="16.5" r="1.5"/></symbol>
+      <symbol id="i-front-light" viewBox="0 0 24 24"><rect x="2.5" y="8.5" width="9" height="7" rx="2"/><path d="M15 9L20.5 7M15 12H21.5M15 15L20.5 17"/></symbol>
+      <symbol id="i-rear-light" viewBox="0 0 24 24"><rect x="4" y="5" width="6.5" height="14" rx="3.25"/><path d="M14 9A4.5 4.5 0 0 1 14 15M16.75 6.5A8 8 0 0 1 16.75 17.5"/></symbol>
+      <symbol id="i-bottle-cages" viewBox="0 0 24 24"><path d="M10 2.5H14V5C16.5 6 17 7.5 17 9.5V20C17 21 16.5 21.5 15.5 21.5H8.5C7.5 21.5 7 21 7 20V9.5C7 7.5 7.5 6 10 5Z"/><path d="M7 12H17"/></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="12.5" rx="2"/><path d="M9 8V6C9 4.5 10 3.5 12 3.5C14 3.5 15 4.5 15 6V8"/></symbol>
+      <symbol id="i-trainer" viewBox="0 0 24 24"><circle cx="12" cy="10" r="5.5"/><circle cx="12" cy="10" r="1.5"/><path d="M9 14.5L5.5 20.5M15 14.5L18.5 20.5M3.5 20.5H8M16 20.5H20.5"/></symbol>
+      <symbol id="i-action-camera" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="12" rx="2.5"/><circle cx="14.5" cy="13" r="3.5"/><path d="M6 7V5.5H9.5V7M6 10.5H8.5"/></symbol>
+      <symbol id="i-drone" viewBox="0 0 24 24"><rect x="9" y="9" width="6" height="6" rx="1.5"/><path d="M9.5 9.5L7 7M14.5 9.5L17 7M9.5 14.5L7 17M14.5 14.5L17 17"/><circle cx="5.5" cy="5.5" r="2.75"/><circle cx="18.5" cy="5.5" r="2.75"/><circle cx="5.5" cy="18.5" r="2.75"/><circle cx="18.5" cy="18.5" r="2.75"/></symbol>
+      <symbol id="i-training-analysis" viewBox="0 0 24 24"><path d="M4 4V20H20"/><path d="M7.5 15L11 11L14 13.5L19 7.5"/></symbol>
+      <symbol id="i-indoor-training" viewBox="0 0 24 24"><rect x="3" y="3.5" width="18" height="12.5" rx="2"/><path d="M12 16V20M8.5 20.5H15.5"/><path d="M6 12.5L9.5 9L12 11L15 7.5L18 10.5"/></symbol>
+      <symbol id="i-coaching" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 9.5H20M8.5 3V6.5M15.5 3V6.5M9 14.5L11 16.5L15 12.5"/></symbol>
+    </svg>
 
     <nav class="sitenav" aria-label="Site">
       <span class="path"><a href="index.html">~/angkyria</a>/uses</span>
@@ -40,50 +83,97 @@
 
       <header class="aboutme">
           <h1>Uses</h1>
-          <p class="tagline">The bike, sensors, tools, equipment and software I race, train and build with.<br>Written up one item at a time.</p>
+          <p class="tagline">The bikes, sensors, tools, equipment and software I race, train and build with.<br>Written up one item at a time.</p>
       </header>
 
       <!--
-        Filling this page in: every section is a list of rows like
+        Every section is a list of rows like
 
-          <li><span class="k">frame</span><span class="v">Brand Model, size M, 2025</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-frame"/></svg><span class="k">frame</span><span class="v">Brand Model, size M, 2025</span></li>
 
-        k is the short label (shown small, in red), v is the detail. When you add
-        a section's first item, delete its "coming soon" row.
+        k is the short label (shown small, in red), v is the detail, and the icon
+        is one of the <symbol>s at the top of this page. A new kind of part needs
+        a new symbol there: an outline drawing on a 24x24 grid.
       -->
 
-      <section class="section" aria-labelledby="bike">
-          <h2 id="bike">bike</h2>
-          <ul class="kv">
-            <li><span class="v soon">coming soon</span></li>
+      <section class="section" aria-labelledby="race-bike">
+          <h2 id="race-bike">race bike</h2>
+          <ul class="kv uses">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-frame"/></svg><span class="k">frame</span><span class="v">Voice Velo Chorus V-Peak, XC full suspension</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-fork"/></svg><span class="k">fork</span><span class="v">RockShox SID Ultimate Flight Attendant, 120 mm, 29&Prime;, Boost, black</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-shock"/></svg><span class="k">shock</span><span class="v">RockShox SIDLuxe Ultimate Flight Attendant, trunnion mount, 185&times;50 mm</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-drivetrain"/></svg><span class="k">drivetrain</span><span class="v">SRAM XX SL Eagle Transmission: rear derailleur with battery, flattop chain, cassette</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-crank"/></svg><span class="k">crank</span><span class="v">SRAM XX SL Eagle Transmission with spider power meter, 36T thread-mount chainring, 3 mm offset, silver/black</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-shifters"/></svg><span class="k">shifters</span><span class="v">SRAM AXS Pod Ultimate controller &times;2</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-bottom-bracket"/></svg><span class="k">bottom bracket</span><span class="v">SRAM DUB T47 Ceramic</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-brakes"/></svg><span class="k">brakes</span><span class="v">Hope XCR Pro E4</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-rotors"/></svg><span class="k">rotors</span><span class="v">Hope floating Centerlock, 180 mm front, 160 mm rear</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-hubs"/></svg><span class="k">hubs</span><span class="v">DT Swiss 180: 15&times;110 mm Boost front, 12&times;148 mm Boost rear with SRAM XD driver</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-rims"/></svg><span class="k">rims</span><span class="v">Duke Lucky Jack SLS5, 31 mm front, 28 mm rear, 285 g each, 28/28 holes</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-spokes"/></svg><span class="k">spokes</span><span class="v">Sapim CX-Ray bladed, black</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-tyres"/></svg><span class="k">tyres</span><span class="v">Pirelli Scorpion Race XC RC 29&times;2.40 Lite TLR, black/yellow, front and rear</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-inserts"/></svg><span class="k">inserts</span><span class="v">Vittoria Air-Liner Light XC-Trail, front and rear</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-cockpit"/></svg><span class="k">cockpit</span><span class="v">VFV XC1 integrated handlebar</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-grips"/></svg><span class="k">grips</span><span class="v">ESI Fit XC ergonomic, black</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-seatpost"/></svg><span class="k">seatpost</span><span class="v">RockShox Reverb AXS, 30.9 mm, 150 mm drop</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-saddle"/></svg><span class="k">saddle</span><span class="v">Selle Italia SLR 3D Carbon</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-pedals"/></svg><span class="k">pedals</span><span class="v">Crankbrothers Egg Beater 3, blue</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-weight"/></svg><span class="k">weight</span><span class="v">about 10.9 kg with pedals, estimated</span></li>
+          </ul>
+      </section>
+
+      <section class="section" aria-labelledby="training-bike">
+          <h2 id="training-bike">training bike</h2>
+          <ul class="kv uses">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-frame"/></svg><span class="k">frame</span><span class="v">Coluer Stake CR 9.1</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-power"/></svg><span class="k">power meter</span><span class="v">Sigeyi AXO for SRAM, 1&times; Boost, 104 BCD</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-drivetrain"/></svg><span class="k">chainring</span><span class="v">Wolf Tooth 104 BCD, 36T</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-spokes"/></svg><span class="k">wheels</span><span class="v">Prototype Carbon Team 29&Prime;</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-tyres"/></svg><span class="k">tyres</span><span class="v">Pirelli Scorpion Race XC RC, as on the race bike</span></li>
           </ul>
       </section>
 
       <section class="section" aria-labelledby="sensors">
           <h2 id="sensors">sensors</h2>
-          <ul class="kv">
-            <li><span class="v soon">coming soon</span></li>
+          <ul class="kv uses">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-power"/></svg><span class="k">power</span><span class="v">SRAM XX SL Eagle Transmission spider power meter</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-heart-rate"/></svg><span class="k">heart rate</span><span class="v">H2 Pro</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-core-temperature"/></svg><span class="k">core temperature</span><span class="v">CORE 2</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-recovery"/></svg><span class="k">recovery</span><span class="v">Whoop</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-watch"/></svg><span class="k">watch</span><span class="v">Coros Pace 4</span></li>
           </ul>
       </section>
 
       <section class="section" aria-labelledby="tools">
           <h2 id="tools">tools</h2>
-          <ul class="kv">
-            <li><span class="v soon">coming soon</span></li>
+          <ul class="kv uses">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-pump"/></svg><span class="k">pump</span><span class="v">CYCPLUS AS2 Pro</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-tubeless-repair"/></svg><span class="k">tubeless repair</span><span class="v">Tubi Master</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-tyre-lever"/></svg><span class="k">tyre lever</span><span class="v">Power Lever Pro</span></li>
           </ul>
       </section>
 
       <section class="section" aria-labelledby="equipment">
           <h2 id="equipment">equipment</h2>
-          <ul class="kv">
-            <li><span class="v soon">coming soon</span></li>
+          <ul class="kv uses">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-head-unit"/></svg><span class="k">head unit</span><span class="v">Hammerhead Karoo 2</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-mount"/></svg><span class="k">mount</span><span class="v">K-Edge adjustable stem mount</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-front-light"/></svg><span class="k">front light</span><span class="v">Super Drive 1800+ Smart</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-rear-light"/></svg><span class="k">rear light</span><span class="v">Radar Drive</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-bottle-cages"/></svg><span class="k">bottle cages</span><span class="v">Elite Leggero Carbon</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-bag"/></svg><span class="k">bag</span><span class="v">Elementa gear bag</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-trainer"/></svg><span class="k">trainer</span><span class="v">Elite Justo 2</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-action-camera"/></svg><span class="k">action camera</span><span class="v">DJI Osmo Action</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-drone"/></svg><span class="k">drone</span><span class="v">DJI Mavic 2 Pro</span></li>
           </ul>
       </section>
 
       <section class="section" aria-labelledby="software">
           <h2 id="software">software</h2>
-          <ul class="kv">
-            <li><span class="v soon">coming soon</span></li>
+          <ul class="kv uses">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-training-analysis"/></svg><span class="k">training analysis</span><span class="v">intervals.icu</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-coaching"/></svg><span class="k">coaching</span><span class="v">IntervalCoach</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-indoor-training"/></svg><span class="k">indoor training</span><span class="v">MyWhoosh</span></li>
           </ul>
       </section>
 

@@ -8,7 +8,7 @@ index.html               home
 cv.html                  curriculum vitae
 angelos-kyriacou-cv.pdf  cv.html printed to PDF
 my_repos.html            a few repositories
-uses.html                bike, sensors, tools, equipment, software (fill in as you go)
+uses.html                bikes, sensors, tools, equipment, software (fill in as you go)
 404.html                 not-found page (served by GitHub Pages)
 css/styles.css           the only stylesheet, including the Hack @font-face rules
 fonts/                   Hack webfont, latin subset (woff2 + woff)
@@ -20,7 +20,7 @@ robots.txt               crawler rules + sitemap pointer
 sitemap.xml              the pages, plus the Karoo extension sites
 ```
 
-Every page loads the stylesheet as `css/styles.css?v=4`. When you change `css/styles.css`, raise that number in all five pages (index, cv, my_repos, uses, 404) in the same push; otherwise browsers that cached the old stylesheet show the new pages with old styles for up to 10 minutes.
+Every page loads the stylesheet as `css/styles.css?v=5`. When you change `css/styles.css`, raise that number in all five pages (index, cv, my_repos, uses, 404) in the same push; otherwise browsers that cached the old stylesheet show the new pages with old styles for up to 10 minutes.
 
 After editing cv.html, regenerate the PDF: open cv.html in Chrome, Print → Save as PDF, A4, margins Default, and save over `angelos-kyriacou-cv.pdf`. The print styles in `css/styles.css` handle the layout.
 

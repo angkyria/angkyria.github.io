@@ -418,7 +418,7 @@ a:focus-visible {
   color: var(--faint);
 }
 
-/* key/value rows, used on the CV page */
+/* key/value rows, used on the CV and uses pages */
 
 .kv,
 .section .kv {
@@ -439,6 +439,29 @@ a:focus-visible {
 
 .kv .v {
   color: var(--fg);
+}
+
+/* the uses page: icon, label and detail on one line; a long detail wraps in its own column */
+
+.kv.uses li {
+  display: grid;
+  grid-template-columns: 1.15em 9rem 1fr;
+  column-gap: 0.75rem;
+  align-items: baseline;
+  margin: 0.15rem 0;
+}
+
+.kv.uses .ico {
+  align-self: start;
+  width: 1.15em;
+  height: 1.15em;
+  margin-top: 0.25em;
+  color: var(--faint);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* ---------- nav ---------- */
@@ -540,6 +563,24 @@ a:focus-visible {
   .viz-tick,
   .viz-note {
     font-size: 20px;
+  }
+
+  /* no room for a label column: the label starts the line and the detail runs on after it */
+  .kv.uses li {
+    display: block;
+    position: relative;
+    padding-left: 1.9em;
+  }
+
+  .kv.uses .ico {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .kv.uses .k {
+    display: inline;
+    margin-right: 0.5em;
   }
 }
 
