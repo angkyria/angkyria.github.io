@@ -26,6 +26,6 @@ After editing cv.html, regenerate the PDF: open cv.html in Chrome, Print → Sav
 
 The racing section and the hero's data fields carry dated facts (2026 results, cup standings). Check them when the season changes, along with the "Updated" note under the race calendar. `og.jpg` repeats the hero's data fields, so it needs remaking when they change.
 
-The training chart in the racing section is static SVG made from Strava moving time (5 Jan – 27 Sep 2026); its numbers are also in the table under it. It needs regenerating to cover later weeks.
+The training chart in the racing section is static SVG made from Strava moving time (5 Jan – 11 Oct 2026); its numbers are also in the table under it. It needs regenerating to cover later weeks.
 
 Visits are counted with GoatCounter (no cookies, no personal data): the snippet at the end of each page sends to `angkyria.goatcounter.com`. That code must be registered at goatcounter.com; if it is taken, change it in all five pages.
