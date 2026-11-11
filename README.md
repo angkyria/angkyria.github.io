@@ -11,6 +11,7 @@ my_repos.html            a few repositories
 uses.html                bikes, sensors, tools, equipment, software (fill in as you go)
 404.html                 not-found page (served by GitHub Pages)
 css/styles.css           the only stylesheet, including the Hack @font-face rules
+tools/                   training-chart.mjs draws the racing chart from training-weeks.csv
 fonts/                   Hack webfont, latin subset (woff2 + woff)
 me.jpg                   portrait
 og.jpg                   1200×630 link-preview card
@@ -20,12 +21,14 @@ robots.txt               crawler rules + sitemap pointer
 sitemap.xml              the pages, plus the Karoo extension sites
 ```
 
-Every page loads the stylesheet as `css/styles.css?v=5`. When you change `css/styles.css`, raise that number in all five pages (index, cv, my_repos, uses, 404) in the same push; otherwise browsers that cached the old stylesheet show the new pages with old styles for up to 10 minutes.
+Every page loads the stylesheet as `css/styles.css?v=6`. When you change `css/styles.css`, raise that number in all five pages (index, cv, my_repos, uses, 404) in the same push; otherwise browsers that cached the old stylesheet show the new pages with old styles for up to 10 minutes.
 
 After editing cv.html, regenerate the PDF: open cv.html in Chrome, Print → Save as PDF, A4, margins Default, and save over `angelos-kyriacou-cv.pdf`. The print styles in `css/styles.css` handle the layout.
 
 The racing section and the hero's data fields carry dated facts (2026 results, cup standings). Check them when the season changes, along with the "Updated" note under the race calendar. `og.jpg` repeats the hero's data fields, so it needs remaking when they change.
 
-The training chart in the racing section is static SVG made from Strava moving time (5 Jan – 11 Oct 2026); its numbers are also in the table under it. It needs regenerating to cover later weeks.
+The training chart in the racing section is static SVG, drawn by `tools/training-chart.mjs` from `tools/training-weeks.csv`: Strava moving time per Monday-to-Sunday week, in minutes (the file's header says what counts as ride, run and other). To bring it up to date, add a row for each finished week and run `node tools/training-chart.mjs` (Node 18 or later, no packages). It rewrites only the chart between the `training-chart` markers in index.html: the caption figures, the 4-week average, the table of numbers, and a narrower copy of the plot that phones get. It warns if a label would land on a bar or another label. The phase brackets ("build", "winter rebuild") and the race notes are set at the top of the script; change them when the season does.
+
+A short script at the end of index.html shows the numbers for the week under the pointer or finger, or picked with the arrow keys. Without it the chart still works: each week has a plain tooltip and every number is in the table.
 
 Visits are counted with GoatCounter (no cookies, no personal data): the snippet at the end of each page sends to `angkyria.goatcounter.com`. That code must be registered at goatcounter.com; if it is taken, change it in all five pages.

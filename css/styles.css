@@ -313,9 +313,10 @@ a:focus-visible {
   margin: 0.25rem 0;
 }
 
-/* training chart, used in the racing section */
+/* training chart, used in the racing section; tools/training-chart.mjs draws it */
 
 .viz {
+  position: relative;
   margin: 1.25rem 0 0.5rem;
 }
 
@@ -352,11 +353,39 @@ a:focus-visible {
   border-radius: 2px;
 }
 
+/* the average is a line on the chart, so its key is a line */
+.viz-legend .swatch-line {
+  display: inline-block;
+  width: 1.1em;
+  height: 2px;
+  margin-right: 0.4em;
+  vertical-align: middle;
+  border-radius: 1px;
+  background: var(--muted);
+}
+
 .viz-plot {
   display: block;
   width: 100%;
   height: auto;
   overflow: visible;
+  /* a finger sliding sideways reads the weeks; up and down still scrolls the page */
+  touch-action: pan-y;
+}
+
+/* Chrome rings a focused SVG after a tap or click too; only the keyboard gets the ring */
+.viz-plot:focus {
+  outline: none;
+}
+
+.viz-plot:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* drawn twice: this one, narrower with thinner bars, replaces the wide one on phones */
+.viz-compact {
+  display: none;
 }
 
 .viz-ride { fill: var(--viz-ride); background: var(--viz-ride); }
@@ -365,8 +394,17 @@ a:focus-visible {
 
 .viz-grid { stroke: var(--rule); stroke-width: 1; }
 .viz-axis { stroke: var(--faint); stroke-width: 1; }
+.viz-bracket { fill: none; stroke: var(--faint); stroke-width: 1; }
+.viz-avg { fill: none; stroke: var(--muted); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.viz-avg-halo { fill: none; stroke: var(--bg); stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; }
 .viz-hit { fill: transparent; }
-.viz g:hover .viz-hit { fill: var(--rule); fill-opacity: 0.5; }
+.viz-week:hover .viz-hit,
+.viz-week.is-active .viz-hit { fill: var(--rule); fill-opacity: 0.6; }
+
+/* only the week columns answer the pointer */
+.viz-plot :is(.viz-grid, .viz-axis, .viz-bracket, .viz-avg, .viz-avg-halo, .viz-tick, .viz-note) {
+  pointer-events: none;
+}
 
 .viz-tick,
 .viz-note {
@@ -377,6 +415,80 @@ a:focus-visible {
 
 .viz-note {
   fill: var(--muted);
+}
+
+/* the readout for one week, added by the script at the end of index.html */
+.viz-tip {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  min-width: 10.5rem;
+  padding: 0.35rem 0.65rem 0.45rem;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.08);
+  font-size: 0.8em;
+  line-height: 1.5;
+  color: var(--muted);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.viz-tip[hidden] {
+  display: none;
+}
+
+.viz-tip strong {
+  margin-right: 0.4em;
+  color: var(--fg);
+  font-size: 1.15em;
+}
+
+.section .viz-tip ul {
+  list-style: none;
+  margin: 0.15rem 0 0;
+  padding: 0;
+}
+
+.section .viz-tip li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 0;
+}
+
+.viz-tip li b {
+  margin-left: auto;
+  padding-left: 1.25rem;
+  color: var(--fg);
+  font-weight: normal;
+  font-variant-numeric: tabular-nums;
+}
+
+/* series keys are short strokes, as on the bars */
+.viz-tip .key {
+  display: inline-block;
+  width: 0.9em;
+  height: 3px;
+  border-radius: 1px;
+}
+
+.viz-tip .key.avg {
+  height: 2px;
+  background: var(--muted);
+}
+
+/* read out to screen readers when the arrow keys move between weeks */
+.viz-live {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .viz details {
@@ -559,12 +671,6 @@ a:focus-visible {
     margin-bottom: 0.5rem;
   }
 
-  /* the chart scales down with the screen; keep its labels readable */
-  .viz-tick,
-  .viz-note {
-    font-size: 20px;
-  }
-
   /* no room for a label column: the label starts the line and the detail runs on after it */
   .kv.uses li {
     display: block;
@@ -581,6 +687,16 @@ a:focus-visible {
   .kv.uses .k {
     display: inline;
     margin-right: 0.5em;
+  }
+}
+
+@media (max-width: 560px) {
+  .viz-wide {
+    display: none;
+  }
+
+  .viz-compact {
+    display: block;
   }
 }
 
