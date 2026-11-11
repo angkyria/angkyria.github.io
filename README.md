@@ -11,7 +11,7 @@ my_repos.html            a few repositories
 uses.html                bikes, sensors, tools, equipment, software (fill in as you go)
 404.html                 not-found page (served by GitHub Pages)
 css/styles.css           the only stylesheet, including the Hack @font-face rules
-tools/                   training-chart.mjs draws the racing chart from training-weeks.csv
+tools/                   training-chart.mjs draws the racing chart from training-weeks.csv; README.md there says how
 fonts/                   Hack webfont, latin subset (woff2 + woff)
 me.jpg                   portrait
 og.jpg                   1200×630 link-preview card
