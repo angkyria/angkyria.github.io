@@ -21,6 +21,7 @@ const PHASES = [ // brackets over the bars, each labelled with its weekly averag
 const NOTES = [ // a word at the top of the plot with a hairline down to one week's bar
   { week: '2026-07-13', label: 'nationals' },
   { week: '2026-09-21', label: 'XCC win' },
+  { week: '2026-11-16', label: '10K PB' },
 ];
 
 // ---------- data ----------
